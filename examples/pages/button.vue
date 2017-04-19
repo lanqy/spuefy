@@ -23,6 +23,58 @@
         <spuefy-button type="link" loading>Link button</spuefy-button>
       </div>
       </div>
+      <div class="columns">
+        <div class="column col-xs-12">
+        <spuefy-button @click="handleClick" disabled>Default button</spuefy-button>
+      </div>
+      <div class="column col-xs-12">
+        <spuefy-button ref="btn1" type="primary" disabled>Primary button</spuefy-button>
+      </div>
+      <div class="column col-xs-12">
+        <spuefy-button type="link" disabled>Link button</spuefy-button>
+      </div>
+      </div>
+
+      <div class="columns">
+        <div class="column col-xs-12">
+            <spuefy-button type="primary" size="lg">
+              large button
+            </spuefy-button>
+            <spuefy-button type="primary">
+              normal
+            </spuefy-button>
+
+            <spuefy-button type="primary" size="sm">
+              small
+            </spuefy-button>
+        </div>
+        <div class="column col-xs-12">
+          <spuefy-button type="primary" action size="lg">
+            <i class="icon icon-menu"></i>
+          </spuefy-button>
+
+          <spuefy-button type="primary" action>
+            <i class="icon icon-menu"></i>
+          </spuefy-button>
+
+            <spuefy-button type="primary" action size="sm">
+              <i class="icon icon-menu"></i>
+            </spuefy-button>
+        </div>
+        <div class="column col-xs-12">
+            <spuefy-button type="primary" action size="lg" circle>
+              <i class="icon icon-arrow-up"></i>
+            </spuefy-button>
+
+            <spuefy-button type="primary" action circle>
+              <i class="icon icon-arrow-up"></i>
+            </spuefy-button>
+
+              <spuefy-button type="primary" action size="sm" circle>
+                <i class="icon icon-arrow-up"></i>
+              </spuefy-button>
+        </div>
+      </div>
   </div>
 </template>
 
