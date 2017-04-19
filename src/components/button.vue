@@ -18,13 +18,14 @@ export default {
     disabled: Boolean,
     nativeType: String,
     plain: Boolean,
+    action: Boolean,
+    circle: Boolean,
     type: {
       type: String,
       default: 'default',
       validator(value) {
         return [
           'default',
-          'danger',
           'primary',
           'link'
         ].indexOf(value) > -1
@@ -35,9 +36,9 @@ export default {
       default: 'normal',
       validator(value) {
         return [
-          'small',
+          'sm',
           'normal',
-          'large'
+          'lg'
         ].indexOf(value) > -1
       }
     }
@@ -49,7 +50,9 @@ export default {
         [`btn-${this.size}`]: true,
         'btn-plain': this.plain,
         'loading': this.loading,
-        'btn-disabled': this.disabled
+        'btn-action': this.action,
+        'circle': this.circle,
+        'disabled': this.disabled
       }
       return classes
     }
