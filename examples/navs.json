@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Elements",
+    "list": [
+      {
+        "path": "/button",
+        "name": "Buttons",
+        "icon": "buttons"
+      },
+      {
+        "path": "/typography",
+        "name": "Typographys",
+        "icon": ""
+      },
+      {
+        "path": "/tables",
+        "name": "Tables",
+        "icon": ""
+      }
+    ]
+  },
+  {
+    "title": "Form Components",
+    "list": [
+      {
+        "path": "/input",
+        "name": "Input",
+        "icon": "input"
+      }
+    ]
+  }
+]
