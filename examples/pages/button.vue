@@ -3,76 +3,77 @@
     <h1>Button</h1>
       <div class="columns">
         <div class="column col-xs-12">
-          <spuefy-button @click="handleClick">Default button</spuefy-button>
+          <s-button @click="handleClick">Default button</s-button>
         </div>
         <div class="column col-xs-12">
-          <spuefy-button ref="btn1" type="primary">Primary button</spuefy-button>
+          <s-button ref="btn1" type="primary">Primary button</s-button>
         </div>
         <div class="column col-xs-12">
-          <spuefy-button type="link">Link button</spuefy-button>
+          <s-button type="link">Link button</s-button>
         </div>
       </div>
       <div class="columns">
         <div class="column col-xs-12">
-        <spuefy-button @click="handleClick" loading>Default button</spuefy-button>
+        <s-button @click="handleClick" loading>Default button</s-button>
       </div>
       <div class="column col-xs-12">
-        <spuefy-button ref="btn1" type="primary" loading>Primary button</spuefy-button>
+        <s-button ref="btn1" type="primary" loading>Primary button</s-button>
       </div>
       <div class="column col-xs-12">
-        <spuefy-button type="link" loading>Link button</spuefy-button>
+        <s-button type="link" loading>Link button</s-button>
       </div>
       </div>
       <div class="columns">
         <div class="column col-xs-12">
-        <spuefy-button @click="handleClick" disabled>Default button</spuefy-button>
+        <s-button @click="handleClick" disabled>Default button</s-button>
       </div>
       <div class="column col-xs-12">
-        <spuefy-button ref="btn1" type="primary" disabled>Primary button</spuefy-button>
+        <s-button ref="btn1" type="primary" disabled>Primary button</s-button>
       </div>
       <div class="column col-xs-12">
-        <spuefy-button type="link" disabled>Link button</spuefy-button>
+        <s-button type="link" disabled>Link button</s-button>
       </div>
       </div>
 
       <div class="columns">
         <div class="column col-xs-12">
-            <spuefy-button type="primary" size="lg">
+            <s-button type="primary" size="lg">
               large button
-            </spuefy-button>
-            <spuefy-button type="primary">
+            </s-button>
+
+            <s-button type="primary">
               normal
-            </spuefy-button>
+            </s-button>
 
-            <spuefy-button type="primary" size="sm">
+            <s-button type="primary" size="sm">
               small
-            </spuefy-button>
+            </s-button>
         </div>
         <div class="column col-xs-12">
-          <spuefy-button type="primary" action size="lg">
-            <i class="icon icon-menu"></i>
-          </spuefy-button>
+          <s-button type="primary" action size="lg">
+            <s-icon icon="menu"></s-icon>
+          </s-button>
 
-          <spuefy-button type="primary" action>
-            <i class="icon icon-menu"></i>
-          </spuefy-button>
+          <s-button type="primary" action>
+            <s-icon icon="menu"></s-icon>
+          </s-button>
 
-            <spuefy-button type="primary" action size="sm">
-              <i class="icon icon-menu"></i>
-            </spuefy-button>
+          <s-button type="primary" action size="sm">
+            <s-icon icon="menu"></s-icon>
+          </s-button>
         </div>
         <div class="column col-xs-12">
-            <spuefy-button type="primary" action size="lg" circle>
-              <i class="icon icon-arrow-up"></i>
-            </spuefy-button>
+            <s-button type="primary" action size="lg" circle>
+              <s-icon icon="arrow" dir="up"></s-icon>
+            </s-button>
 
-            <spuefy-button type="primary" action circle>
-              <i class="icon icon-arrow-up"></i>
-            </spuefy-button>
+            <s-button type="primary" action circle>
+              <s-icon icon="arrow" dir="up"></s-icon>
+            </s-button>
 
-              <spuefy-button type="primary" action size="sm" circle>
-                <i class="icon icon-arrow-up"></i>
-              </spuefy-button>
+            <s-button type="primary" action size="sm" circle>
+              <s-icon icon="arrow" dir="up"></s-icon>
+            </s-button>
         </div>
       </div>
   </div>

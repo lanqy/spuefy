@@ -16,6 +16,11 @@
         "path": "/tables",
         "name": "Tables",
         "icon": ""
+      },
+      {
+        "path": "/icon",
+        "name": "Icons",
+        "icon": ""
       }
     ]
   },

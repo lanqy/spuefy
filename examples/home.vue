@@ -1,11 +1,11 @@
 <template>
   <section>
-    <spuefy-list v-for="group in navs">
+    <s-list v-for="group in navs">
       <span slot="title">{{group.title}}</span>
-      <spuefy-list-item v-for="item in group.list" :to="item.path" navigate>
+      <s-list-item v-for="item in group.list" :to="item.path" navigate>
         {{ item.name }}
-      </spuefy-list-item>
-    </spuefy-list>
+      </s-list-item>
+    </s-list>
   </section>
 </template>
 
