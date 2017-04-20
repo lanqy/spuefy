@@ -24,14 +24,12 @@
         </s-field>
       </div>
     </div>
-
     <div class="form-group">
       <label class="form-label">Gender</label>
       <s-radio name="gender" value="Male">Male</s-radio>
       <s-radio name="gender" value="Female">Female</s-radio>
       <!-- <p>selected: {{radioSelected}}</p> -->
     </div>
-
     <div class="columns">
       <div class="column col-xs-12">
         <s-field label="Message">
@@ -39,25 +37,19 @@
         </s-field>
       </div>
     </div>
-
-
   </div>
 </template>
-
 <script>
 export default {
-
   data(){
     return {
       radioSelected:''
     }
   },
   methods:{
-
     handleBlur(evt){
       console.log(evt);
     },
-
     handleFocus(evt){
       console.log(evt);
     },
@@ -66,7 +58,7 @@ export default {
     },
     updateValue(event) {
       // this.radioSelected = event.target.value;
-    },
+    }
   }
 }
 </script>
