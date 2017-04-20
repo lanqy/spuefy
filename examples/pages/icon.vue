@@ -10,7 +10,7 @@
 
     <div class="columns">
       <div class="column col-3 col-md-6">
-        <s-button type="primary" action size="lg">
+        <s-button type="primary" @click="handleClick" action size="lg">
           <s-icon icon="arrow" dir="up"></s-icon>
         </s-button>
         <p>icon-arrow-up</p>
@@ -205,7 +205,11 @@
 
 <script>
 export default {
-
+methods:{
+  handleClick(evt){
+    console.log(evt);
+  }
+}
 }
 </script>
 
