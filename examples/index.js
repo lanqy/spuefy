@@ -30,7 +30,7 @@ router.beforeEach((route, redirect, next) => {
   if (route.path !== '/') {
     indexScrollTop = document.body.scrollTop
   }
-  document.title = route.meta.title || 'Vue UI'
+  document.title = route.meta.title || 'Spuefy UI example'
   next()
 })
 
