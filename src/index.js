@@ -1,30 +1,24 @@
-import $ from './utils/NodeList.js'
-
 import Button from './components/button'
 import Link from './components/link'
 import ListItem from './components/list-item'
 import List from './components/list'
+import Icon from './components/icon'
 
-const install = function(Vue) {
-  if (install.installed) return
-
-  Vue.component(Button.name, Button)
-  Vue.component(Link.name, Link)
-  Vue.component(ListItem.name, ListItem)
-  Vue.component(List.name, List)
-}
-
-// auto install
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue)
-}
-
-module.exports = {
-  $,
-  install,
-  version: '1.0.0-beta2',
+const components = {
   Button,
   Link,
   ListItem,
-  List
+  List,
+  Icon
 }
+
+components.install = (Vue, options = {}) => {
+  for (const componentName in components) {
+    const component = components[componentName];
+    if (component && componentName !== 'install') {
+      Vue.component(component.name, component);
+    }
+  }
+}
+
+export default components
