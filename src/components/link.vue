@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'spuefy-link',
+  name: 's-link',
   props: {
     to: String
   },

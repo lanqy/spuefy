@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'spuefy-button',
+  name: 's-button',
   props: {
     loading: Boolean,
     disabled: Boolean,

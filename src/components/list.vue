@@ -14,6 +14,6 @@
 
 <script>
 export default {
-  name: 'spuefy-list'
+  name: 's-list'
 }
 </script>
