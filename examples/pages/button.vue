@@ -7,7 +7,7 @@
     <section class="notes">
       <p><strong>Buttons</strong> include simple button styles for actions in different types and sizes. </p>
     </section>
-    
+
     <section class="notes">
       <p>Add the <code>btn</code> class to &lt;a&gt;, &lt;input&gt; or &lt;button&gt; elements for a default button. There are classes <code>btn-primary</code> and <code>btn-link</code> for predefined primary and link buttons. A button with the <code>loading</code> class can show loading indicator.  </p>
     </section>
@@ -139,6 +139,46 @@
       <section class="notes">
         <p>Icons with the <code>icon</code> class can be correctly rendered in each button size. </p>
       </section>
+      <header class="text-center">
+        <h4>Button groups</h4>
+      </header>
+
+      <div class="columns">
+        <div class="column col-xs-12">
+          <s-button-group>
+            <s-button tooltip data-tooltip="This is a message">first button</s-button>
+            <s-button tooltip tipDir="left" data-tooltip="This is a message">first button</s-button>
+            <s-button tooltip tipDir="right" data-tooltip="This is a message">third button</s-button>
+            <s-button tooltip tipDir="bottom" data-tooltip="This is a message">four button</s-button>
+          </s-button-group>
+        </div>
+        <div class="column col-xs-12">
+          <s-button-group is-block>
+            <s-button type="primary" class="active">first button</s-button>
+            <s-button type="primary">first button</s-button>
+            <s-button type="primary">third button</s-button>
+          </s-button-group>
+        </div>
+      </div>
+
+
+      <div class="columns">
+        <div class="column col-xs-12">
+          <s-button-group>
+            <s-button size="sm" class="active">first button</s-button>
+            <s-button size="sm">first button</s-button>
+            <s-button size="sm">third button</s-button>
+            <s-button size="sm">four button</s-button>
+          </s-button-group>
+        </div>
+        <div class="column col-xs-12">
+          <s-button-group is-block>
+            <s-button size="sm" type="primary" class="active">first button</s-button>
+            <s-button size="sm" type="primary">first button</s-button>
+            <s-button size="sm" type="primary">third button</s-button>
+          </s-button-group>
+        </div>
+      </div>
   </div>
 </template>
 

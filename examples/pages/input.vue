@@ -24,12 +24,39 @@
         </s-field>
       </div>
     </div>
+
     <div class="form-group">
       <label class="form-label">Gender</label>
-      <s-radio name="gender" value="Male">Male</s-radio>
-      <s-radio name="gender" value="Female">Female</s-radio>
-      <!-- <p>selected: {{radioSelected}}</p> -->
+      <s-radio-group v-model="radio">
+          <s-radio value="Male">Male</s-radio>
+          <s-radio value="Female">Female</s-radio>
+          <s-radio value="boths" disabled>boths</s-radio>
+      </s-radio-group>
     </div>
+    <p class="content"><b>Selection:</b> {{ radio }}</p>
+    <div class="form-group">
+      <s-switch @change="handleChange">{{switchState}}</s-switch>
+    </div>
+    <div class="form-group">
+      <s-switch @change="handleChange" disabled>disabled</s-switch>
+    </div>
+
+    <div class="form-group">
+      <s-checkbox @change="handleCheckboxChange" v-model="checkboxState">{{checkboxState}}</s-checkbox>
+    </div>
+    <div class="form-group">
+      <s-checkbox @change="handleCheckboxChange" disabled>disabled</s-checkbox>
+    </div>
+
+    <s-checkbox-group v-model="checkboxGroup">
+      <s-checkbox custom-value="a">a</s-checkbox>
+      <s-checkbox custom-value="b">b</s-checkbox>
+      <s-checkbox custom-value="c">c</s-checkbox>
+      <s-checkbox custom-value="d" disabled>d</s-checkbox>
+    </s-checkbox-group>
+
+    <p class="content"><b>Selection:</b> {{ checkboxGroup }}</p>
+
     <div class="columns">
       <div class="column col-xs-12">
         <s-field label="Message">
@@ -43,7 +70,10 @@
 export default {
   data(){
     return {
-      radioSelected:''
+      switchState:false,
+      checkboxState: true,
+      checkboxGroup: ['a'],
+      radio: 'Male'
     }
   },
   methods:{
@@ -55,6 +85,11 @@ export default {
     },
     handleChange(evt){
       console.log('evt:',evt)
+      this.switchState = evt;
+    },
+    handleCheckboxChange(evt){
+      console.log('evt:',evt)
+      this.checkboxState = evt;
     },
     updateValue(event) {
       // this.radioSelected = event.target.value;
