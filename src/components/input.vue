@@ -2,7 +2,7 @@
         <input
             v-if="type !== 'textarea'"
             class="form-input"
-            :class="[inputSize]"
+            :class="[inputSize,validateCls]"
             ref="input"
             :type="newType"
             :name="name"
@@ -26,6 +26,7 @@
         <textarea
             v-else
             class="form-input"
+            :class="[validateCls]"
             :name="name"
             :placeholder="placeholder"
             :disabled="disabled"
@@ -49,6 +50,7 @@ export default {
       type: String,
       default: 'text'
     },
+    validate: String,
     size: String,
     expanded: Boolean,
     passwordReveal: Boolean,
@@ -74,6 +76,7 @@ export default {
     return {
       newValue: this.value,
       newType: this.type,
+      validateCls: this.validate,
       newAutocomplete: this.autocomplete || 'on',
       isPasswordVisible: false
     };
@@ -87,6 +90,9 @@ export default {
         return 'input-' + this.size;
       }
       return '';
+    },
+    inputType() {
+
     }
   },
   watch: {
@@ -101,10 +107,29 @@ export default {
     input(event) {
       const val = event.target.value;
       this.newValue = val;
+      this.validator(event);
       this.$emit('input', val);
     },
     onBlur(event) {
       this.$emit('blur', event);
+      this.validator(event);
+    },
+    validator(e) { // simple validator for example,
+      var v = e.target.value;
+      var message = '';
+      if (!v) {
+        message = 'invalid.';
+        this.validateCls = 'is-error';
+      } else {
+        message = 'available.';
+        this.validateCls = 'is-success';
+      }
+      if (this.$parent.isFieldComponent) {
+        // Set message only if user haven't defined
+        if (!this.$parent.message) {
+          this.$parent.newMessage = message
+        }
+      }
     }
   }
 };

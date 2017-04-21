@@ -30,18 +30,6 @@ export default {
     message(value) {
       this.newMessage = value;
     }
-  },
-  computed: {
-    addonsPosition() {
-      if (this.position) return 'has-addons-' + this.position;
-    },
-    fieldType() {
-      if (this.grouped) {
-        return 'is-grouped';
-      } else if (this.$slots.default !== undefined && this.$slots.default.length > 1) {
-        return 'has-addons';
-      }
-    }
   }
 };
 
