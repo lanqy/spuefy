@@ -1,10 +1,13 @@
 <template>
   <button
     class="btn"
-    :class="btnClasses"
+    :class="[btnClasses,tooltipClass]"
     :type="nativeType"
     :disabled="disabled"
     :loading="loading"
+    :tooltip="tooltip"
+    :tipDir="tipDir"
+    :data-tooltip="tooltipTxt"
     @click="handleClick">
     <slot></slot>
   </button>
@@ -17,9 +20,14 @@ export default {
     loading: Boolean,
     disabled: Boolean,
     nativeType: String,
+    tooltipTxt: String,
     plain: Boolean,
     action: Boolean,
+    tooltip: Boolean,
     circle: Boolean,
+    tipDir: { // tooltip direction
+      type: String
+    },
     type: {
       type: String,
       default: 'default',
@@ -51,10 +59,17 @@ export default {
         'btn-plain': this.plain,
         'loading': this.loading,
         'btn-action': this.action,
+        'tooltip': this.tooltip,
         'circle': this.circle,
         'disabled': this.disabled
       }
       return classes
+    },
+    tooltipClass() {
+      if (this.tipDir) {
+        return 'tooltip-' + this.tipDir;
+      }
+      return '';
     }
   },
   methods: {

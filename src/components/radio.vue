@@ -26,16 +26,14 @@ export default {
   },
   methods: {
     changed(event) {
-      console.log(event);
-      console.log(this.$parent);
-      // this.$parent.updateValue(this.value, event);
+      this.$parent.updateValue(this.value, event)
     }
   },
   created() {
+    if (!this.$parent.isRadioGroupComponent) {
+      this.$destroy()
+      throw new Error('You should wrap Radio on a Radio Group')
+    }
   }
 };
-
 </script>
-
-<style lang="css">
-</style>

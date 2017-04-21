@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import sLink from './link'
+import Slink from './link'
 
 export default {
   name: 's-list-item',
   components: {
-    sLink
+    Slink
   },
   props: {
     to: String,

@@ -11,11 +11,11 @@ export default {
   },
   computed: {
     newIcon() {
-      return this.icon + this.getDir();
+      return this.icon + this._class();
     }
   },
   methods: {
-    getDir: function() {
+    _class: function() {
       return this.dir ? '-' + this.dir : '';
     }
   }
