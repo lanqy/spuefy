@@ -54,8 +54,16 @@
       <s-checkbox custom-value="c">c</s-checkbox>
       <s-checkbox custom-value="d" disabled>d</s-checkbox>
     </s-checkbox-group>
-
     <p class="content"><b>Selection:</b> {{ checkboxGroup }}</p>
+
+    <h5>Vertical example</h5>
+    <s-checkbox-group v-model="checkboxGroup">
+      <div><s-checkbox custom-value="a">a</s-checkbox></div>
+      <div><s-checkbox custom-value="b">b</s-checkbox></div>
+      <div><s-checkbox custom-value="c">c</s-checkbox></div>
+      <div><s-checkbox custom-value="d" disabled>d</s-checkbox></div>
+    </s-checkbox-group>
+
 
     <div class="columns">
       <div class="column col-xs-12">
