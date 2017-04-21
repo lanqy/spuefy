@@ -6,7 +6,7 @@
     <div class="columns">
       <div class="column col-xs-12">
         <s-field label="Name" message="This is an enable input with a label">
-          <s-input @change="handleChange" @focus="handleFocus" @blur="handleBlur" autocomplete="off" placeholder="Name"></s-input>
+          <s-input @change="handleChange" size="lg" @focus="handleFocus" @blur="handleBlur" autocomplete="off" placeholder="Name"></s-input>
         </s-field>
       </div>
     </div>
@@ -70,6 +70,60 @@
         <s-field label="Message">
           <s-input @change="handleChange" type="textarea" @focus="handleFocus" @blur="handleBlur" autocomplete="off" placeholder="Message"></s-input>
         </s-field>
+      </div>
+    </div>
+
+    <header class="text-center">
+      <h4>Input groups</h4>
+    </header>
+
+    <div class="columns">
+      <div class="column col-xs-12">
+        <s-input-group>
+          <s-input type="text" slot="input" size="sm" placeholder="username"></s-input>
+          <s-addon slot="addonOrButton" size="sm">@slack.com</s-addon>
+        </s-input-group>
+
+      </div>
+      <div class="column col-xs-12">
+        <s-input-group>
+          <s-addon slot="addon" size="sm">slack.com/</s-addon>
+          <s-input slot="input" type="text" size="sm" placeholder="site name"></s-input>
+          <s-button size="sm" slot="addonOrButton" group type="primary">Submit</s-button>
+        </s-input-group>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column col-xs-12">
+        <s-input-group>
+          <s-input type="text" slot="input" placeholder="username"></s-input>
+          <s-addon slot="addonOrButton">@slack.com</s-addon>
+        </s-input-group>
+
+      </div>
+      <div class="column col-xs-12">
+        <s-input-group>
+          <s-addon slot="addon">slack.com/</s-addon>
+          <s-input slot="input" type="text" placeholder="site name"></s-input>
+          <s-button slot="addonOrButton" group type="primary">Submit</s-button>
+        </s-input-group>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column col-xs-12">
+        <s-input-group>
+          <s-input type="text" slot="input" size="lg" placeholder="username"></s-input>
+          <s-addon slot="addonOrButton" size="lg">@slack.com</s-addon>
+        </s-input-group>
+
+      </div>
+      <div class="column col-xs-12">
+        <s-input-group>
+          <s-addon slot="addon" size="lg">slack.com/</s-addon>
+          <s-input slot="input" type="text" size="lg" placeholder="site name"></s-input>
+          <s-button size="lg" slot="addonOrButton" group type="primary">Submit</s-button>
+        </s-input-group>
       </div>
     </div>
   </div>

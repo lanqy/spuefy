@@ -6,11 +6,13 @@ import List from './components/list'
 import Icon from './components/icon'
 import Field from './components/field'
 import Input from './components/input'
+import InputGroup from './components/input-group'
 import Radio from './components/radio'
 import RadioGroup from './components/radio-group'
 import Switch from './components/switch'
 import Checkbox from './components/checkbox'
 import CheckboxGroup from './components/checkbox-group'
+import Addon from './components/addon'
 
 const components = {
   ButtonGroup,
@@ -21,11 +23,13 @@ const components = {
   Icon,
   Field,
   Input,
+  InputGroup,
   Radio,
   RadioGroup,
   Switch,
   Checkbox,
-  CheckboxGroup
+  CheckboxGroup,
+  Addon
 }
 
 components.install = (Vue, options = {}) => {

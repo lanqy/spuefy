@@ -1,9 +1,8 @@
 <template>
-    <p class="control">
         <input
             v-if="type !== 'textarea'"
             class="form-input"
-            :class="[size]"
+            :class="[inputSize]"
             ref="input"
             :type="newType"
             :name="name"
@@ -40,7 +39,6 @@
             @focus="$emit('focus', $event)"
             @change="$emit('change', newValue)">
         </textarea>
-    </p>
 </template>
 <script>
 export default {
@@ -83,6 +81,12 @@ export default {
   computed: {
     hasMessage() {
       return this.$parent.isFieldComponent && this.$parent.newMessage;
+    },
+    inputSize() {
+      if (this.size) {
+        return 'input-' + this.size;
+      }
+      return '';
     }
   },
   watch: {

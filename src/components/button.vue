@@ -6,6 +6,7 @@
     :disabled="disabled"
     :loading="loading"
     :tooltip="tooltip"
+    :group="group"
     :tipDir="tipDir"
     :data-tooltip="tooltipTxt"
     @click="handleClick">
@@ -22,12 +23,11 @@ export default {
     nativeType: String,
     tooltipTxt: String,
     plain: Boolean,
+    group: Boolean,
     action: Boolean,
     tooltip: Boolean,
     circle: Boolean,
-    tipDir: { // tooltip direction
-      type: String
-    },
+    tipDir: String, // tooltip direction
     type: {
       type: String,
       default: 'default',
@@ -59,6 +59,7 @@ export default {
         'btn-plain': this.plain,
         'loading': this.loading,
         'btn-action': this.action,
+        'input-group-btn': this.group,
         'tooltip': this.tooltip,
         'circle': this.circle,
         'disabled': this.disabled
