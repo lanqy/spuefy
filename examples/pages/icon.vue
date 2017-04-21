@@ -200,6 +200,60 @@
       </div>
     </div>
 
+    <header class="text-center">
+      <h4>Object</h4>
+    </header>
+    <div class="columns">
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="mail"></s-icon>
+        </s-button>
+        <p>icon-mail</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="people"></s-icon>
+        </s-button>
+        <p>icon-people</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="message"></s-icon>
+        </s-button>
+        <p>icon-message</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="photo"></s-icon>
+        </s-button>
+        <p>icon-photo</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="time"></s-icon>
+        </s-button>
+        <p>icon-time</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="location"></s-icon>
+        </s-button>
+        <p>icon-location</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="link"></s-icon>
+        </s-button>
+        <p>icon-link</p>
+      </div>
+      <div class="column col-3 col-md-6">
+        <s-button type="primary" action size="lg">
+          <s-icon icon="emoji"></s-icon>
+        </s-button>
+        <p>icon-emoji</p>
+      </div>
+    </div>
+
   </div>
 </template>
 
