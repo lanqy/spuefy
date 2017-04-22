@@ -90,9 +90,6 @@ export default {
         return 'input-' + this.size;
       }
       return '';
-    },
-    inputType() {
-
     }
   },
   watch: {

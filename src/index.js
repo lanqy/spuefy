@@ -13,6 +13,8 @@ import Switch from './components/switch'
 import Checkbox from './components/checkbox'
 import CheckboxGroup from './components/checkbox-group'
 import Addon from './components/addon'
+import Label from './components/label'
+import Dropdown from './components/dropdown'
 
 const components = {
   ButtonGroup,
@@ -29,7 +31,9 @@ const components = {
   Switch,
   Checkbox,
   CheckboxGroup,
-  Addon
+  Addon,
+  Label,
+  Dropdown
 }
 
 components.install = (Vue, options = {}) => {

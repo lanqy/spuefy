@@ -126,6 +126,30 @@
         </s-input-group>
       </div>
     </div>
+
+    <header class="text-center">
+      <h4>Labels</h4>
+    </header>
+
+    <div class="columns">
+      <div class="column col-xs-12">
+        <s-label>default label</s-label>
+        <s-label type="primary">primary label</s-label>
+        <s-label type="success">success label</s-label>
+        <s-label type="warning">warning label</s-label>
+        <s-label type="error">error label</s-label>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column col-xs-12">
+        <s-label>default label</s-label>
+        <s-label type="primary">primary label</s-label>
+        <s-label type="success">success label</s-label>
+        <s-label type="warning">warning label</s-label>
+        <s-label type="error">error label</s-label>
+      </div>
+    </div>
   </div>
 </template>
 <script>

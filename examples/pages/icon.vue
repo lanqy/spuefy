@@ -266,9 +266,3 @@ methods:{
 }
 }
 </script>
-
-<style lang="less">
-  .btn-group .btn {
-    margin-bottom: 15px;
-  }
-</style>

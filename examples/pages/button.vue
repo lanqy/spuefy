@@ -119,7 +119,7 @@
               <s-button type="primary" size="normal">
                 <s-icon icon="arrow" dir="left"></s-icon>
                 normal
-                </s-button>
+              </s-button>
 
               <s-button type="primary" size="normal">
                 normal
@@ -129,7 +129,7 @@
               <s-button type="primary" size="sm">
                 <s-icon icon="arrow" dir="left"></s-icon>
                 small
-                </s-button>
+              </s-button>
 
               <s-button type="primary" size="sm">
                 small
@@ -196,9 +196,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less">
-  .btn-group .btn {
-    margin-bottom: 15px;
-  }
-</style>

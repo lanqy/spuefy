@@ -5,6 +5,7 @@
     :type="nativeType"
     :disabled="disabled"
     :loading="loading"
+    :dropdown="dropdown"
     :tooltip="tooltip"
     :group="group"
     :tipDir="tipDir"
@@ -26,6 +27,7 @@ export default {
     group: Boolean,
     action: Boolean,
     tooltip: Boolean,
+    dropdown: Boolean,
     circle: Boolean,
     tipDir: String, // tooltip direction
     type: {
@@ -58,6 +60,7 @@ export default {
         [`btn-${this.size}`]: true,
         'btn-plain': this.plain,
         'loading': this.loading,
+        'dropdown-toggle': this.dropdown,
         'btn-action': this.action,
         'input-group-btn': this.group,
         'tooltip': this.tooltip,

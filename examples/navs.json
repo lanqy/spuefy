@@ -25,6 +25,16 @@
     ]
   },
   {
+    "title": "Dropdown",
+    "list": [
+      {
+        "path": "/dropdown",
+        "name": "dropdown",
+        "icon": "dropdown"
+      }
+    ]
+  },
+  {
     "title": "Form Components",
     "list": [
       {
