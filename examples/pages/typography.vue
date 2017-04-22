@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div class="container docs-content">
+    <header class="text-center">
+      <h4>Typography</h4>
+    </header>
     <section class="notes">
       <h1>H1 Title <small class="label">5rem</small></h1>
       <h2>H2 Title <small class="label">4rem</small></h2>
