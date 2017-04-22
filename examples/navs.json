@@ -8,11 +8,6 @@
         "icon": "buttons"
       },
       {
-        "path": "/typography",
-        "name": "Typographys",
-        "icon": ""
-      },
-      {
         "path": "/tables",
         "name": "Tables",
         "icon": ""
@@ -20,6 +15,11 @@
       {
         "path": "/icon",
         "name": "Icons",
+        "icon": ""
+      },
+      {
+        "path": "/typography",
+        "name": "Typographys",
         "icon": ""
       }
     ]

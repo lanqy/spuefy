@@ -38,8 +38,8 @@
               dropdown button
               <s-icon icon="caret"></s-icon>
             </s-button>
-
-            <ul class="menu">
+            <s-menu>
+            <ul>
               <li class="menu-item">
                 <a href="#dropdowns">
                   Slack
@@ -56,6 +56,7 @@
                 </a>
               </li>
             </ul>
+          </s-menu>
           </s-dropdown>
         </div>
 
@@ -65,7 +66,8 @@
               dropdown button
               <s-icon icon="caret"></s-icon>
             </s-button>
-            <ul class="menu">
+            <s-menu>
+            <ul>
               <li class="menu-item">
                 <a href="#dropdowns">
                   Slack
@@ -82,6 +84,7 @@
                 </a>
               </li>
             </ul>
+          </s-menu>
           </s-dropdown>
         </div>
       </div>

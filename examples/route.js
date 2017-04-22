@@ -25,7 +25,7 @@ let routes = registerRoute(navs)
 
 routes.push({
   path: '/',
-  component: require('./home.vue')
+  component: require('./pages/button.vue')
 })
 
 export default routes

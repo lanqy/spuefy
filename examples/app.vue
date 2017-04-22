@@ -1,11 +1,45 @@
 <template>
-  <div class="root container grid-960">
-    <div class="columns">
-      <router-link class="page-back" v-if="visible" :to="'/'">
-      </router-link>
-      <router-view class="page"></router-view>
+  <div>
+  <section class="section section-header bg-gray">
+    <section class="grid-header container grid-960">
+      <nav class="navbar">
+        <section class="navbar-section">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-sm"><i class="icon icon-menu"></i></a>
+          <a href="/" class="navbar-brand mr-10">spuefy</a>
+          <!--<a href="index.html" class="btn btn-link">Docs</a> -->
+          <span>a lightweight UI components for Vue.js based on Spectre</span>
+        </section>
+        <section class="navbar-section">
+          <a href="https://github.com/lanqy/spuefy" target="_blank" class="btn btn-primary">GitHub</a>
+        </section>
+      </nav>
+    </section>
+  </section>
+
+  <div class="container grid-960">
+    <section class="columns">
+    <div id="sidebar" class="docs-sidebar column col-3 col-sm-12">
+      <ul class="docs-nav nav nav-vertical">
+          <li class="nav-item" v-for="group in navs">
+            <a>{{group.title}}</a>
+            <ul class="nav">
+              <li class="nav-item" v-for="item in group.list">
+                <a class="page-link" :href="'#'+item.path">{{ item.name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
     </div>
+    <div class="root docs-content column col-9 col-sm-12">
+      <div class="columns">
+        <router-link class="page-back" v-if="visible" :to="'/'">
+        </router-link>
+        <router-view class="page"></router-view>
+      </div>
+    </div>
+  </section>
   </div>
+</div>
 </template>
 
 <style lang="less">
@@ -278,11 +312,21 @@
 </style>
 
 <script type="text/babel">
+import navs from './navs.json'
+
 export default {
+  data() {
+    return {
+      navs: []
+    }
+  },
   computed: {
     visible() {
       return ['/', '/header', '/search'].indexOf(this.$route.path) < 0
     }
+  },
+  created() {
+    this.navs = navs
   }
 }
 </script>
