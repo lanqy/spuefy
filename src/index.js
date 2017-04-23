@@ -1,8 +1,6 @@
 import ButtonGroup from './components/button-group'
 import Button from './components/button'
 import Link from './components/link'
-import ListItem from './components/list-item'
-import List from './components/list'
 import Icon from './components/icon'
 import Field from './components/field'
 import Input from './components/input'
@@ -16,13 +14,13 @@ import Addon from './components/addon'
 import Label from './components/label'
 import Dropdown from './components/dropdown'
 import Menu from './components/menu'
+import Popover from './components/popover'
+import Card from './components/card'
 
 const components = {
   ButtonGroup,
   Button,
   Link,
-  ListItem,
-  List,
   Icon,
   Field,
   Input,
@@ -35,7 +33,9 @@ const components = {
   Addon,
   Label,
   Dropdown,
-  Menu
+  Menu,
+  Popover,
+  Card
 }
 
 components.install = (Vue, options = {}) => {

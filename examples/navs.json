@@ -35,6 +35,26 @@
     ]
   },
   {
+    "title": "Popover",
+    "list": [
+      {
+        "path": "/popover",
+        "name": "popover",
+        "icon": "popover"
+      }
+    ]
+  },
+  {
+    "title": "Card",
+    "list": [
+      {
+        "path": "/card",
+        "name": "card",
+        "icon": "card"
+      }
+    ]
+  },
+  {
     "title": "Form Components",
     "list": [
       {
