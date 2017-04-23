@@ -1,6 +1,6 @@
 <template>
   <div class="container docs-content page">
-    <header class="text-center"><h3>Buttons</h3></header>
+    <header class="text-center"><h3>Popovers</h3></header>
     <div class="columns">
     <div class="column col-xs-12">
       <s-popover>
